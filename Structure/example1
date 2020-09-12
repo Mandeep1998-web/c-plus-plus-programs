@@ -1,0 +1,19 @@
+
+// CPP program to initialize data member in c++
+#include <iostream>
+using namespace std;
+struct student{
+
+int roll;
+student(int x)
+{
+    roll=x;
+}
+};
+//driver code
+int main()
+{
+struct student s(2);
+cout<<s.roll;
+return 0;
+}
