@@ -1,0 +1,17 @@
+#include<conio.h> // for clrscr and getch
+#include<iostream> // for cin and cout
+using namespace std;
+int add(int,int ,int=0);
+int main(){
+int a=3;
+int b=2;
+cout<<"the sum of the numbers is "<<add(a,b) <<endl;
+int c;
+cout<<"Enter three numbers";
+cin>>a>>b>>c;
+cout<<add(a,b,c);
+}
+int add(int x,int y,int z)
+{
+return (x+y+z);
+}
