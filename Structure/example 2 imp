@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+struct book { //here book is a type
+int bookid;
+char title[20];
+float price;
+};
+
+int main()
+{
+ book b1={100,"c++",339.3};
+ book b2,b3;
+ b2.bookid=30;
+ //b2.title="c++ is one of good languages"; It is worng because b2.title act as array and it denotes the base address of array
+ // that is definitely a constant so we can not put a constant in right side of equal to sign
+  b2.price =700;
+
+  // how to assign the value of b2 to b3
+  //b3.bookid=b2.bookid; or
+  b3=b2;// because they have same data type
+
+
+  cout<<" the book id ="<<b1.bookid<<endl;
+  cout<<" the book price is  ="<<b2.price;
+}
