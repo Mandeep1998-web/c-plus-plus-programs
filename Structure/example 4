@@ -1,0 +1,26 @@
+//How we can determine which member variable can access the function and which is not
+#include<iostream>
+using namespace std;
+
+struct book{
+    public:
+int bookid;
+float bookprice;
+char booktitle[10];
+private:// now we cant directly implement the b1.bookid here because it is in private class
+void inputtaken(){
+   cout<<"Enter the input";
+    cin>>bookid>>bookprice>>booktitle;
+     if (bookid<1)
+        bookid=-1*bookid;
+}
+void display(){
+cout<<"the ID of the book = "<<bookid<<endl<<"the price of the book "<<bookprice<<endl<<"the title of the book is "<<booktitle;
+}
+};
+int main(){
+  struct book b1;
+  b1.bookid=-1;
+  b1.inputtaken();// here we have to use dot because inputtaken act as a member over here also.
+  b1.display();
+}
