@@ -2,3 +2,4 @@
 1. we can also make function in the defintion(body) of the structure .
 2. For declaring a variable of a type it is not mandatory to write struct keyword.
 3. As a security concern we can write private , protected, public that who can access the structure member and who can't.
+4.Public memeber can be access outside the structure body.
