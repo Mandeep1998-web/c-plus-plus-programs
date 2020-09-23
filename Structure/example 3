@@ -1,0 +1,21 @@
+// How we can define the function inside the body of the structure
+#include<iostream>
+using namespace std;
+
+struct book{
+int bookid;
+float bookprice;
+char booktitle[10];
+void inputtaken(){
+     cout<<"Enter the input";
+     cin>>bookid>>bookprice>>booktitle;
+}
+void display(){
+cout<<"the ID of the book = "<<bookid<<endl<<"the price of the book "<<bookprice<<endl<<"the title of the book is "<<booktitle;
+}
+};
+int main(){
+  struct book b1;
+  b1.inputtaken();// here we have to use dot because inputtaken act as a member over here also.
+  b1.display();
+}
