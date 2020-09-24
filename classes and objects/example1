@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+class complex{
+private : //by defualt they are private
+    int a,b; // this is the class member variables
+public :
+void set(int x,int y){
+a=x;b=y;
+}
+void show( )// no need to pass becuase it is under the same public class
+{
+cout<<"the value of a and b is "<<a<<endl<<b;
+}
+};
+//=> defintion outside class
+//void complex ::set(int x, int y){
+
+//}
+int main(){ //c++ requires to be main of int
+complex c1;// it is the variable of complex structute named c1 and we call it here OBJECT . object consume memory class doesn't
+c1.set(3,4);
+//c1.a or c1.b is wrong because they are in private class but we can call c1 .set and in set definition a ,b belongs to c1
+c1.show();
+return 0; // return 0 to the operating system means program execute successfully
+}
+// Member function(show) can directly access the variable of the class (a,b).
+//member function can directly access the member of its class like we didn't pass anything in show function.
+// we can write the function outside a class but we have to write MEMBERSHIP LABEL (complex ::)
