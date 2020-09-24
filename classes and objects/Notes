@@ -1,0 +1,1 @@
+The difference between class and structure is that member of the class is  private by default, and in structure it is public by default.
