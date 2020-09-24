@@ -1,12 +1,18 @@
 The difference between class and structure is that member of the class is  private by default, and in structure it is public by default.
-.=> 
-// Member function(show) can directly access the variable of the class (a,b).
-//member function can directly access the member of its class like we didn't pass anything in show function.
-// we can write the function outside a class but we have to write MEMBERSHIP LABEL (complex ::)
+=> 
+Member function(show) can directly access the variable of the class (a,b).
+member function can directly access the member of its class like we didn't pass anything in show function.
+we can write the function outside a class but we have to write MEMBERSHIP LABEL (complex ::)
 
 =>
 #class is description of object or blueprint of object and object is an instance of class.
 #INSTANCE MEMBER VARIABLE =Attributes,variables,properties.
 #INSTANCE MEMBER FUNCTION = Methods, procedures, actions, services.
+
+
+=>
+static member function can be accesed with or  without class object.
+They are qualified with word static.
+they can only access the static member of the class.
 
 
