@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+class complex
+{
+private:
+int a,b,c;
+public:
+complex(int x, int y){ //parameterized constructor
+a=x,b=y;
+cout<<a;
+}
+complex ()//default constructor if you will not create any object compiler automatically create
+// a constructor so c2,c3 call this because they have no paramter in it c1 call parameterized constructor
+{
+
+}
+};
+int main(){
+complex c1(2,3),c2,c3;
+
+return 0;
+}
