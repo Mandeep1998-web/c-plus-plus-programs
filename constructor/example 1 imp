@@ -17,6 +17,6 @@ complex ()//default constructor if you will not create any object compiler autom
 };
 int main(){
 complex c1(2,3),c2,c3;
-
+// it can be write as complex c1=complex(2,3);
 return 0;
 }
