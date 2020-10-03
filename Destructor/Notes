@@ -1,0 +1,8 @@
+1. destructor is an instance member function of class which is used to release the resource of the object.
+2. when our object is destroyed our destructor is called .
+3. destructor has no return type and you can not pass anything in destructor and it is declared with tield sign before writing its name.
+4. It is going to invoked implicitly when object is going to destroy.
+5. destructor can never be static.
+6.Overloading is not possible.
+7. destructor is made by compiler ownself if we didnot made it.
+8.IT SHOULD BE DEFINED TO RELEASE RESOURCES ALLOCATED TO AN OBJECT.
