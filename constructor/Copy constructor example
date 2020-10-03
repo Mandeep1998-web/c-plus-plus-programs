@@ -1,0 +1,25 @@
+// example of copy constructor
+#include<iostream>
+using namespace std;
+class complex{
+public :
+int a,b;
+public:
+complex(int x,int y)//paramterized constructor
+{
+ a=x,b=y;
+
+}
+complex (complex &c)// i use reference operator because if i only pass the c then it will do recursion and i get error
+// because when c creates then it will create constructor and call complex again and again
+{
+    a=c.a;
+    b=c.b;
+    cout<<a<<b;
+}
+};
+int main()
+{
+  complex c1(4,5);
+  complex c2(c1);// copy constructor call
+}
