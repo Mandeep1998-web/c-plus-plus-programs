@@ -1,0 +1,23 @@
+
+// example of copy constructor
+#include<iostream>
+using namespace std;
+class complex{
+
+public:
+~complex()
+{
+cout<<"destructor"; // here destructor run firstly then getch or return because as soon as object destroys the destructor invoke
+}
+};
+int fun(){
+     complex obj;
+}
+
+
+int main()
+{
+
+   fun();//function call
+
+}
