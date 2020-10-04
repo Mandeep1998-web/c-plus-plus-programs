@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+class integer {
+
+private:
+    int a ;
+    public:
+    int setdata(int x)
+    {
+    a=x;
+    }
+    int showdata()
+    {
+        cout<<"the value of increment operator is "<<a;
+    }
+   integer operator++(){ // This is when we have to do pre increment
+   integer temp;
+   temp.a=++a;
+   return (temp);
+   }
+   integer operator++(int){//post increment is differentiated with an int passing as an argument
+   integer temp;
+   temp.a=a++;
+   return (temp);
+   }
+
+};
+int main()
+{
+    integer c1,c2;
+    c1.setdata(3);
+    c2=++c1;
+    c2.showdata();
+
+}
