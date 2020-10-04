@@ -1,0 +1,3 @@
+Operator overloading means when our operator do multiple jobs . It is used bascially to perform polymorphism in complie time.
+for example if we create + as function name so it performs two definitions bascially first to do sum of two numbers and also depicts the function name. so any 
+operator used in c can be used as function name preceded 
