@@ -1,0 +1,28 @@
+// operator overloading of unary operator
+
+#include<iostream>
+using namespace std;
+class complex{
+    public:
+int a,b;
+int show(){ // class member function
+cout<<"a="<<a<<endl<<"b="<<a;
+}
+int setdata(int x,int y )
+{
+    a=x,b=y;
+}
+complex operator-(){ // this is operator overloading insteading of righting the function name is use the operator +
+complex temp;
+temp.a=-a;
+temp.b=-b;
+return(temp);
+}
+};
+int main(){
+complex c1,c2;
+c1.setdata(3,3);
+c2=-c1;//here we do -c1 because we have only one operand over here i can write it as c1.operator-() also so it i write it in left side because i
+// it depends on the behaviour of the operator becuase if we have to write int x=-2 so we  also write it on left side.
+c2.show();
+}
