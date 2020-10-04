@@ -1,3 +1,31 @@
 Operator overloading means when our operator do multiple jobs . It is used bascially to perform polymorphism in complie time.
 for example if we create + as function name so it performs two definitions bascially first to do sum of two numbers and also depicts the function name. so any 
 operator used in c can be used as function name preceded 
+///////////////////////////////////////////////////////////////
+#include<iostream>
+using namespace std;
+class complex{
+    public:
+int a,b;
+int show(){ // class member function
+cout<<"a="<<a <<endl <<"b=" <<b;
+}
+int setdata(int x, int y)
+{
+    a=x,b=y;
+}
+complex operator +(complex c){ // this is operator overloading insteading of righting the function name is use the operator +
+complex temp;
+temp.a=a+c.a;
+temp.b=b+c.b;
+return(temp);
+}
+};
+int main(){
+complex c1,c2,c3;
+c1.setdata(5,4);
+c2.setdata(4,0);
+c3=c1+c2;//c1 calls the add function and we pass c2 in it . // in the function call we dont need to right operator and even dont need brackets
+// we can simply write operator and operand.
+c3.show();
+}
