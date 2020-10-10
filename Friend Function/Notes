@@ -1,0 +1,5 @@
+Definiton : Friend function can access all the private and public member of a class .
+It is defined outside the class scope.
+
+benefits of friend function:-
+1.friend function can be declared as private and public and it is not a class member and FRIEND FUNCTION CAN ACESS THE MEMBERS FROM TWO CLASS AT SAME TIME.
