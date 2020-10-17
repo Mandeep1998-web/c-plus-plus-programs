@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+class A{
+private :
+    int a ;
+    protected: int setValue(int c)
+    {
+        a=c;
+        cout<<a;
+    }
+
+};
+class B: public A{ // derived class visibily mode and base class
+
+public :
+
+    int setData(int k){
+
+    setValue(k);
+    }
+};
+int main()
+{
+B obj;
+
+    obj.setData(4);
+}
