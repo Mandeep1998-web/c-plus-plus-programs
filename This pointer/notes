@@ -1,0 +1,3 @@
+this pointer is a local object pointer (which has scope for that block where it is defined) which held in every instance member function(the function that is under the class) 
+) and hold s the address of the caller object.
+# this pointer can't be modify and used to refer a caller object in member function.
