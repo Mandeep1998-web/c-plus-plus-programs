@@ -1,0 +1,3 @@
+oops(object oriented programming) : main aim to bind the data and function ao that no other part of the code access it except that function.
+class = blueprint of the object and describe the properites and behaviour of the object.
+oops --> encapsulatoin (to bind the all information of an entity into an object ) inheritance , polymorphism, abstraction.
