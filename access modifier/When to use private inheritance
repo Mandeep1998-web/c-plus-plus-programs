@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+class  array{
+private:
+ int a[10];
+public :
+int insert(int index , int value)
+{
+
+    a[index]=value;
+}
+};
+class STACK :private array {// by this we can put one value in stack[0] and another in stack[2] that is worng in the case of stack so we have to use private here
+int top;
+
+public:
+    int push(int value){
+    insert(top,value);
+    }
+
+};
+int main()
+{
+
+    STACK s1; // make an object of class stack
+   s1.push(34);
+   s1.insert(2,56);
+}
+
