@@ -1,0 +1,19 @@
+// program to return the reverse counting with out using loop
+#include<iostream>
+using namespace std;
+
+int recursionfun (int x){
+if (x==0)
+    return 0;
+    else
+        cout<<x<<endl;
+return (recursionfun(x-1));
+}
+
+
+int main(){
+
+int a=100;
+recursionfun(a);
+
+}
