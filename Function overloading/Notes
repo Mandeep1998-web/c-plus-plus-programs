@@ -33,6 +33,14 @@ int f1(float y)
 }
 };
 
+===========Function overriding:======================================
+function overriding means when we have same function name and same parameter in the parent class as well as in the child class then it is class over riding 
+so if we want to use the function overriding then we use virtual keyword so that it can do late binding and compile in runtime.
+
+
+
+
+
 
 int main(){
 B object;
