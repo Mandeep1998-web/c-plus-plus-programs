@@ -1,0 +1,44 @@
+Function overloading : when one function is overloaded with multiple jobs it is called function overloading.
+   int man(int x) or int man(double x)============it can be used as a function overloading
+   but if the signature(man(int x) is same then it is not function overloading.)
+   
+   
+   RULES FOR FUNCTION OVERLOADING::::::::
+   1. EXACT MATCH
+   2. TYPE PROMOTION
+   3. TYPE CONVERSION. (TYPE CONVERSION IS POSSIBLE ONLY PRIMITITVE DATA TYPE)
+   (IF ALL THREE FAIL THEN ERROR) 
+   ==============================================================================
+   FUNCTION OVERLOADING IS POSSIBLE IF THE SCOPE OF BOTH THE FUNCTION IS IN SAME CLASS.
+   IF THE OBJECT THE CALL THE FUNCTION IS IN CHILD CLASS THEN IT GOES TO CHILD CLASS THE  THAT OF PARENT CLASS WHATEVER THE RETURN TYPE 
+   ===============
+   E.G
+   // function overloading example
+#include<iostream>
+using namespace std;
+class A{
+    public:
+int f1(int x)
+{
+
+    cout<<"a  parent class is executed";
+}
+
+};
+class B : public  A{
+public:
+int f1(float y)
+{
+    cout<<"B child class is executed";
+}
+};
+
+
+int main(){
+B object;
+int m=5;
+object.f1(m);
+}
+==================================================================
+==================================================================
+Here B class will execute becuase the scope of the function overloading is not in the same scope and the object that is calling is in the B class
