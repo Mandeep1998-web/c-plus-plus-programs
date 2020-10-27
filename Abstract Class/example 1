@@ -1,0 +1,26 @@
+// Abstract class contains the pure virtal function and contains on object
+
+#include<iostream>
+using namespace std;
+class Base{
+ int x;
+public:
+   virtual int fun()=0;// pure virtual function
+    int getx()
+    {
+      return x;
+    }
+};
+    class Derived: public Base{ //Here i am doing the inheridity
+    int y;
+public:
+    int fun(){
+    cout << "fun() called";}
+
+    };
+int main(void)
+{
+    Derived d;
+    d.fun();
+    return 0;
+}
