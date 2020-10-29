@@ -1,0 +1,20 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;// so bascially here we have a placesholder namespace and a std library theat keep the all header files
+template <class temp>
+
+    temp fun1(temp a ,temp b)
+    {
+       if(a>b)
+        return a;
+       else
+        return b;
+    }
+
+int main()
+{
+    cout<<fun1(3,4)<<endl;
+  cout<<fun1(5.9,6.9);
+
+
+    }
