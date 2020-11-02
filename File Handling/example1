@@ -1,0 +1,13 @@
+#include<fstream>
+#include<iostream>
+using namespace std;
+int main()
+{
+    ofstream fout;
+    fout.open("myfile1.dat");
+getchar();// it is only for holding the screen
+    fout<<"hello";
+getchar();
+    fout.close();
+getchar();
+}
