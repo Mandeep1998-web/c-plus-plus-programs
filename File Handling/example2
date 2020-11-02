@@ -1,0 +1,18 @@
+// here we want to read the data
+#include<fstream>
+#include<iostream>
+using namespace std;
+int main()
+{
+    ifstream fin;// ifstsream for input
+    char ch;
+    fin.open("myfile.dat");
+    ch=fin.get(); // get function also includes the whitespaces
+  while(!fin.eof())
+  {
+    cout<<ch;
+     ch=fin.get();
+  }
+  fin.close();
+  return 0;
+}
