@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+class complex{
+private:
+    int a, b;
+public:
+    complex(){}//default constructor
+    complex (int k){ //we make a constructor and take int as input
+ a=k,b=0;
+}
+
+int showData()
+{
+cout<<"the value of a is "<<a<<endl<<"the value of b is "<<b<<endl;
+}};
+int main(){
+complex c1;
+int x=5;
+c1=x;//error complex type conversion cant be done with int type
+
+c1.showData();
+}
