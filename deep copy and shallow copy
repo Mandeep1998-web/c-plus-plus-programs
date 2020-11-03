@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+class scopy{
+private:
+    int a, b;
+    int *p;
+public:
+    scopy(){
+    p=new int;
+    }
+    int fun(int x, int y,int z)
+    {
+        a=x;b=y;*p=z;
+    }
+    int showData()
+    {
+        cout<<"the value of a is "<<a<<endl<<"the value of b is "<<b<<"the value of p is "<<*p;
+    }
+    scopy(scopy &d){
+    a=d.a; b=d.b;
+    p=new int;
+    *p=*(d.p);
+    }
+};
+    int main()
+    {
+ scopy d1;
+ d1.fun(3,4,5);
+ scopy d2=d1;// this is called copy constructor
+ //and if i declare d2 in above line and after that assign value d2 to d1 then it is called implicit copy assignment operator
+ d2.showData();
+};
