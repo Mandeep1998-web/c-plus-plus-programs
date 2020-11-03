@@ -1,0 +1,41 @@
+#include<iostream>
+using namespace std;
+class Product{
+int m,n;
+public:
+int setData(int x,int y){
+m=x;
+n=y;}
+int getM(){// here we return m because we can't access them f
+return m;}
+int getN(){
+return n;}
+
+};
+class item{
+private:
+    int a,b;
+public:
+    int showData()
+    {
+        cout<<"the value of the a  is ="<<a<<"the value of the b is =" <<b;
+    }
+    item(){}//default constructor has no parameter
+    item(Product p){
+        product e,r;
+       e=getM();
+       r=getN();
+    }
+    a=p.e;
+    b=p.
+};
+
+int main()
+{
+  // class objects
+item i;
+Product p;
+p.setData(3,4);
+i=p;
+i.showData();
+}
