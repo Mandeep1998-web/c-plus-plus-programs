@@ -1,4 +1,5 @@
 // Abstract class contains the pure virtal function and contains on object
+//rohit is typing
 
 #include<iostream>
 using namespace std;
