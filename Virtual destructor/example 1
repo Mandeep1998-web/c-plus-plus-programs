@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+class A{
+int a;
+public :
+    int f1(){}
+    virtual ~a{}{}
+};
+class B: public A{
+int b;
+public :
+int f2(){}
+virtual -b(){}
+};
+int fun();
+int fun(){
+A *p=new B;//here i make an object with parent class pointer 
+p->f1();// correct//because in early binding compiler invoke the function in its own desire and it will decide by the type of pointer not content
+p>f2();// so it is error because pointer can access those who is in parent class and also early binding
+// so if we want to use f2 also then we use virtual destructor that  cause late binding so that compiler consider the content of pointer not type
+delete p;//it will delete the object we have to do delete othervise it cause's the memory leakage
+}
+int main()
+{
+    fun();
+}
+
