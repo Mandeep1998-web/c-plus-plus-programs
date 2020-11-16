@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+class Dummy{
+int a,b;
+public:
+    int show(){
+    cout<<"the value of a ="<<a<<endl<<"the value of b is ="<<b;
+}};
+int main()
+{
+    Dummy obj1;
+    int *p;
+    p=(int *)&obj1;
+    *p=3;
+  *(p+1)=4;
+   obj1.show();
+}
