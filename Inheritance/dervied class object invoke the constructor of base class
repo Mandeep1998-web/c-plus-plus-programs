@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+class funBaseClass{
+    public:
+funBaseClass()//constructor has no return type
+{
+    cout<<"this is mandeep singh";
+}};
+class funDerivedClass : public funBaseClass{
+
+};
+int main()
+{
+    funDerivedClass obj;//dervied class object can invoke the parent class implicitly;
+}
+
