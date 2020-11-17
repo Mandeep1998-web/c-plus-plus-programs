@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+class baseclass1{
+    public:
+baseclass1(){
+cout<<"invokes the base class1 function"<<endl;
+}
+};
+class derivedclass1 : public baseclass1{
+
+};
+class derivedclass2 : public baseclass1{
+ };
+int main()
+{
+    derivedclass1 obj;
+ derivedclass2 obj1;
+ }
+
