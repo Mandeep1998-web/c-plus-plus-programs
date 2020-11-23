@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main(){
+int no=1210;
+int temp=no;
+int sum=0;
+while(no!=0)
+{
+ int rem=no%10;
+ no/=10;
+  sum =sum*10+rem;
+
+
+}
+if(sum==temp)
+    cout<<"palindrome no";
+else
+    cout<<"not a palindrome no";
+}
