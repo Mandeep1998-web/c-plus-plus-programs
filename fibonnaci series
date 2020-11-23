@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+int main(){
+int result=0,num=10;
+int x=-1,y=1;
+for(int i=1;i<=10;i++)
+{
+result=x+y;
+cout<<result<<" ";
+x=y;
+y=result;
+}
+}
