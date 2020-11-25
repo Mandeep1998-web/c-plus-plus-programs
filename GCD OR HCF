@@ -1,0 +1,14 @@
+//find the gcd of two number
+#include<iostream>
+using namespace std;
+int main(){
+int h,x=500,y=200;
+
+for(h=x<y?x:y; h>=1; h--){
+            if(x%h==0 && y%h==0)
+            break;
+}
+cout<<h;
+}
+
+
