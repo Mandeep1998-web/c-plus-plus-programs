@@ -1,0 +1,18 @@
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int k=20,j=400;
+    int i;
+int   max=k>j?k:j;
+    do {
+        if(max%k==0 && max%j==0){
+            cout<<"the lcm is "<<max;
+             break;
+        }
+        else
+        max++;
+    }
+    while(true);
+}
