@@ -1,0 +1,10 @@
+#include<iostream>
+using namespace std;
+int main(){
+    char x;
+cout<<"enter the character of whom you want to find the ascii value"<<endl;
+cin>>x;
+cout<<"\n the ascii value of "<<x<<int(x);
+
+
+}
