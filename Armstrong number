@@ -1,0 +1,15 @@
+// program to find check the armstrong number
+#include<iostream>
+using namespace std;
+int main(){
+int num=321,result=0;
+int temp=num;
+while(num!=0){
+int numr=num%10;
+num=num/10;
+result=(result+(numr*numr*numr));
+}
+num=temp;
+if(result==num)
+    cout<<"no is armstrong number";
+}
