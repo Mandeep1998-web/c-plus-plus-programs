@@ -1,0 +1,4 @@
+Function is set of statments that  together perform some specific task.
+there is atleast one function in c++ program to execute that is main.
+Function definiton works only when it called.
+Functions are used to perform certain actions and important for reusing the code :Define once and use mutliple times.
