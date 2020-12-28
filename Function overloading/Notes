@@ -4,8 +4,9 @@ Function overloading : when one function is overloaded with multiple jobs it is 
    
    
    RULES FOR FUNCTION OVERLOADING::::::::
+(and if one of them are appropriate to determine then no need of other rule)
    1. EXACT MATCH
-   2. TYPE PROMOTION
+   2. TYPE PROMOTION(char promote to int and float promote to double)
    3. TYPE CONVERSION. (TYPE CONVERSION IS POSSIBLE ONLY PRIMITITVE DATA TYPE)
    (IF ALL THREE FAIL THEN ERROR) 
    ==============================================================================
