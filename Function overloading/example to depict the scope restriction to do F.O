@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+class A{ // Parent class
+public:
+
+};
+class B : public A{// child  class // so i have to inherit the properties of the parent class
+    public:
+    void fun(float y){
+  cout<<" Class B is executed";} // so if they are in the same scope then i can execute the function overloading 
+  //if i write the class A definiton in parent class then it execute the statement of B though the wrong signature
+  void fun(int x){
+    cout<<"Class A is executed";
+    }
+};
+int main(){
+    // now i have to make the object and  call it
+    B obj1;
+    int m=5;
+    obj1.fun(m);
+
+}
