@@ -51,3 +51,6 @@ object.f1(m);
 ==================================================================
 ==================================================================
 Here B class will execute becuase the scope of the function overloading is not in the same scope and the object that is calling is in the B class
+
+=============================================================================  
+Note: in c++ some function or standard library is also function overloaded (sqrt function) that means it can take the value int float doble as parameters\) 
