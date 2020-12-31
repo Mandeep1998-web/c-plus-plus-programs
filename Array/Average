@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int i,sum=0,result,arr[5];
+    cout<<"Enter the marks of the students"<<endl;
+    for(i=0;i<=4;i++)
+        cin>>arr[i];
+    for( i=0;i<=4;i++)
+      sum=sum+arr[i];
+      result=sum/5;
+     cout<<"the average of the marks is "<<result;
+
+}
