@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int recursion(int,int);
+int main(){
+    int power,num,output;
+cout<<"Enter the number and power";
+cin>>num>>power;
+ output=recursion(num,power);
+cout<<output;
+}
+int recursion(int num,int power)
+{
+if(power==0)
+  return 1;
+else
+  return(num*recursion(num,power-1));
+}
+
