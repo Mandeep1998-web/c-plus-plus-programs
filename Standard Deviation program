@@ -1,0 +1,35 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+void standarddev(int arr[]);
+int i,mean,variance,arr[10],variancesum=0,sum=0;
+float sd;
+int main(){
+
+cout<<"Enter the elements";
+for(i=0;i<=9;i++){
+    cin>>arr[i];
+}
+standarddev(arr);
+}
+void standarddev(int arr[])
+{
+for(i=0;i<=9;i++){
+    sum+=arr[i];
+}
+    mean=sum/10;
+
+    for(i=0;i<=9;i++){
+    variancesum+=pow(arr[i]-mean,2);
+    }
+    variance=variancesum/10;
+    if(variance<0){
+       variance=-variance;
+    }
+    sd=sqrt(variance);
+cout<<sd;
+
+
+}
+
+
