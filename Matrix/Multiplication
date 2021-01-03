@@ -1,0 +1,57 @@
+#include<iostream>
+using namespace std;
+int i,j,k,arr1[3][3],arr2[3][3],arr3[3][3];
+int main(){
+
+cout<<"Enter the 9 elements of the matrix1"<<endl;
+for( i=0;i<3;i++)
+    {
+        for( j=0;j<3;j++)
+            cin>>arr1[i][j];
+}
+cout<<"Your entered matrix are:"<<endl;
+for(i=0;i<3;i++)
+{
+        for(j=0;j<3;j++)
+                cout<<arr1[i][j]<<" ";
+        cout<<endl;
+}
+cout<<"Enter the 9 elements of the matrix2"<<endl;
+for(i=0;i<3;i++)
+{
+        for(j=0;j<3;j++)
+            cin>>arr2[i][j];
+}
+cout<<"Your entered matrix are:"<<endl;
+for(i=0;i<3;i++)
+{
+        for( j=0;j<3;j++)
+                cout<<arr2[i][j]<<" ";
+        cout<<endl;
+}
+cout<<"the multiply of the matrix are:"<<endl;
+for( i=0;i<3;i++)
+{
+    for(j=0;j<3;j++){
+            arr3[i][j]=0;
+    }
+    }
+for( i=0;i<3;i++)
+{
+    for(j=0;j<3;j++){
+    for(k=0;k<3;k++){
+      arr3[i][j]=arr3[i][j]+arr1[i][k]*arr2[k][j];
+        }
+}
+}
+for(i=0;i<3;i++)
+{
+    for(k=0;k<3;k++)
+        {
+            cout<<arr3[i][k]<<" ";
+
+            }
+             cout<<endl;
+}
+}
+
