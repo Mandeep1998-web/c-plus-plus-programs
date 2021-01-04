@@ -1,0 +1,17 @@
+#include<iostream>
+#include<cstring>
+using namespace std;
+int i,count=0;
+int main()
+{
+    string str="mandeeeep";
+    char ch='e';
+    int len=str.length();
+    for(i=0;i<len;i++){
+
+    if(str[i]==ch)
+        count++;
+}
+cout<<count;
+
+}
