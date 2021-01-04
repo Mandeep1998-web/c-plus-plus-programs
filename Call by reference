@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+void swap(int*,int*,int*);
+int main()
+{
+    int a=1,b=2,c=3;
+    cout<<"before swapping the value of a="<<a<<endl<<"b="<<b<<endl<<"c="<<c<<endl;
+
+   swap(&a,&b,&c);
+}
+void swap(int *a,int *b,int *c)
+{
+int temp=*b;
+   *b=*a;
+   *a=*c;
+   *a=temp;
+
+
+    cout<<"after swapping the value of"<<endl<< "a="<<*a<<endl<<"b="<<*b<<endl<<"c="<<*c;
+}
