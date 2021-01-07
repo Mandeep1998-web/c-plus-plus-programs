@@ -1,0 +1,20 @@
+#include<iostream>
+#include<cstring>
+using namespace std;
+struct address{
+int houseno;
+string  city;
+};
+struct student{
+int roll_no;
+address addr;
+};
+int main(){
+    student s;
+s.roll_no=343;
+s.addr.houseno=46;
+s.addr.city="hamirpur";
+cout<<"the address of the student is "<<s.addr.city;
+cout<<"the roll_no of the student is "<<s.addr.houseno;
+
+}
