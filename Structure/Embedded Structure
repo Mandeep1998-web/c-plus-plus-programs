@@ -1,0 +1,23 @@
+#include<iostream>
+#include<cstring>
+using namespace std;
+struct employee{
+char name[20];
+struct Date_of_Birth{
+int date;
+char month[20];
+int year;
+}d;
+}emp;
+int main(){
+strcpy(emp.name,"mandeep singh");
+emp.d.date=23;
+strcpy(emp.d.month,"october");
+emp.d.year=2020;
+
+//output
+cout<<"the name of the employee "<<emp.name<<endl;
+cout<<"the date of DOB of the employee "<<emp.d.date<<endl;
+cout<<"the month of DOB of the employee "<<emp.d.month<<endl;
+cout<<"the year of DOB of the employee "<<emp.d.year<<endl;
+}
