@@ -1,0 +1,23 @@
+//c++ program to return a structure
+#include<iostream>
+#include<cstring>
+using namespace std;
+struct employee{
+int id;
+char name[16];
+};
+
+employee initializeFunction(employee e){ //To return a structure the return type is the structure name
+e.id=1;
+strcpy(e.name,"mandeep singh");
+return (e);//
+
+}
+int main(){
+    //creating object of the employee
+    employee e;
+e=initializeFunction(e);
+cout<<"the id of the employee is "<<e.id<<endl;
+cout<<"the name of the employee is "<<e.name<<endl;
+return 0;
+}
