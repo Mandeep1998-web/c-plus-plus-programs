@@ -1,0 +1,28 @@
+//c++ program to pass structure as an argument by value
+//find the distance in kilometer and meter
+#include<iostream>
+using namespace std;
+struct Distance{
+int kilometer;
+int meter;
+};
+void calculateDistance( Distance d1,Distance d2)
+{
+    Distance d;
+d.kilometer=d1.kilometer+d2.kilometer+(d1.meter+d2.meter)/1000;
+d.meter=(d1.meter+d2.meter)%1000;
+cout<<"The total distance is "<<d.kilometer<< " kilometer " <<d.meter<< " meter " ;
+
+}
+void initializeDistance()
+{
+    Distance d1,d2;//structure object
+    d1.kilometer=4;
+    d1.meter=700;
+    d2.kilometer=5;
+    d2.meter=400;
+    calculateDistance(d1,d2);
+}
+int main(){
+initializeDistance();
+}
