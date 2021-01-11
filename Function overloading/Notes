@@ -11,7 +11,7 @@ Function overloading : when one function is overloaded with multiple jobs it is 
    (IF ALL THREE FAIL THEN ERROR) 
    ==============================================================================
    FUNCTION OVERLOADING IS POSSIBLE IF THE SCOPE OF BOTH THE FUNCTION IS IN SAME CLASS.
-   IF THE OBJECT THE CALL THE FUNCTION IS IN CHILD CLASS THEN IT GOES TO CHILD CLASS THE  THAT OF PARENT CLASS WHATEVER THE RETURN TYPE 
+   IF THE OBJECT, THE CALL, THE FUNCTION IS IN CHILD CLASS THEN IT GOES TO CHILD CLASS otherwise  THAT OF PARENT CLASS WHATEVER THE RETURN TYPE 
    ===============
    E.G
    // function overloading example
