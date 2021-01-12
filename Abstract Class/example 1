@@ -1,4 +1,4 @@
-// Abstract class contains the pure virtal function and contains on object
+// Abstract class contains the pure virtal function and we can not instantiate abstract class (means can't create object of the class)
 
 #include<iostream>
 using namespace std;
