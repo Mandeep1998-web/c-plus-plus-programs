@@ -1,4 +1,4 @@
 constructor is called when we create an object.
 constructor is used to solve the problem of initialization.
-compiler makes two constructor : default constructor when we are not create any constructor our self , and copy constructor when we pass a constructor object in another 
+compiler makes two constructor : default constructor when we are not create any constructor our self , and copy constructor when we pass a constructor object in
 in another constructor : complex c4(c1);
