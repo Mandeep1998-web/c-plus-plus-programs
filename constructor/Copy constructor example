@@ -2,7 +2,7 @@
 #include<iostream>
 using namespace std;
 class complex{
-public :
+private :
 int a,b;
 public:
 complex(int x,int y)//paramterized constructor
