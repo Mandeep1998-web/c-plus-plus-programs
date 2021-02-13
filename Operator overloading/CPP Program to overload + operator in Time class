@@ -1,0 +1,43 @@
+#include<iostream>
+using namespace std;
+class time{
+private:
+    int second;
+    int minute;
+    int hour;
+public:
+    void setTime(int ,int ,int);
+    void normalize();
+    void showTime();
+
+    time operator+(time ti){
+    time temp;
+    temp.hour=hour+ti.hour+(minute+ti.minute)/60;
+    temp.minute=(minute+ti.minute)%60+(second+ti.second)/60;
+    temp.second=(second+ti.second)%60;
+    return temp;
+    }
+
+    };
+    void time::setTime(int ho,int mi, int sec){
+    second=sec;
+    minute=mi;
+    hour=ho;
+    }
+
+
+    void time::showTime(){
+    cout<<hour<<":"<<minute<<":"<<second<<endl;
+    }
+
+int main(){
+time t,g,result;
+t.setTime(4,100,100);
+g.setTime(3,50,61);
+result=t+g;
+t.showTime();
+g.showTime();
+result.showTime();
+
+
+}
