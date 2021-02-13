@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+class time{
+private:
+    int second;
+    int minute;
+    int hour;
+public:
+    void setTime(int ,int ,int);
+    void normalize();
+    void showTime();
+    };
+    void time::setTime(int ho,int mi, int sec){
+    second=sec;
+    minute=mi;
+    hour=ho;
+    }
+    void time:: normalize(){
+    hour=hour+(minute/60);
+    minute=minute%60+(second/60);
+    second=second%60;
+    }
+
+    void time::showTime(){
+    cout<<hour<<":"<<minute<<":"<<second<<endl;
+    }
+
+int main(){
+time t;
+t.setTime(4,100,100);
+t.showTime();
+t.normalize();
+t.showTime();
+}
