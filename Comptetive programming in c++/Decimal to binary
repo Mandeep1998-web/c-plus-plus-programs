@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+void binaryconversion(int num){
+  int binary,rem,i=1;
+while(num){
+     rem=num%2;
+    num=num/2;
+   binary=binary+(rem*i);
+   i=i*10;
+}
+cout<<binary;
+}
+int main(){
+int num=12;
+binaryconversion(num);
+}
