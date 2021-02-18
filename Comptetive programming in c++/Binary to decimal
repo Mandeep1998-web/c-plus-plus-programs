@@ -1,0 +1,18 @@
+#include<iostream>
+#include<stdlib.h>
+#include<math.h>
+using namespace std;
+int main()
+{
+   int rem,num=1011;
+   int sum=0;
+   int base=1;
+  while(num){
+   static int i=0;
+    rem=num%10;
+    sum=sum+rem*base;
+    num=num/10;
+   base=base*2;
+    }
+cout<<sum;
+}
