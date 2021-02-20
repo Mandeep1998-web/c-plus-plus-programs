@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+using namespace std;
+int countwords(string str){
+    //breaking string into word using stringstream
+stringstream str_stm(str);//used for breaking it into words
+string word;//to store individual words
+int count=0;
+while(str_stm >> word){//read something from the stringstream objet
+    count++;
+
+}
+return count;
+
+}
+int main()
+{
+    string s="hello folks mandeep singh is here ";
+    cout<<"Number of words are:"<<countwords(s);
+}
