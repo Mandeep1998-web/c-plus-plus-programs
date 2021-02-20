@@ -1,0 +1,23 @@
+#include<iostream>
+#include<sstream>
+using namespace std;
+
+    void extractinteger(string s){
+    stringstream str_strm;
+    str_strm<<s;//insertion operator is used to convert the string into string stream
+    string temp_str;
+    int temp_int;
+    while(!str_strm.eof())
+    {
+        str_strm>>temp_str;//it will read them one by one
+        if(stringstream(temp_str)>>temp_int){//try to convert string to int
+            cout<<temp_int<<" ";
+        }
+        temp_str="";//clear temp string
+    }
+
+    }
+    int main(){
+string str="hello world happy new year 2021";
+extractinteger(str);
+}
