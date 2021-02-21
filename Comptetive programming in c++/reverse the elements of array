@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int i,s,arr[10],arr2[10];
+cout<<"Enter the array size";
+cin>>s;
+cout<<"Enter the value for the array";
+for( i=0;i<s;i++){
+    cin>>arr[i];
+}
+for (i=0;i<s;i++){
+    arr2[i]=arr[i];
+}
+for( i=0;i<s;i++)
+{
+    arr[i]=arr2[s-i-1];
+}
+cout<<"the reverse values in array  is "<<" ";
+for( i=0;i<s;i++){
+    cout<<arr[i]<<" ";
+}}
