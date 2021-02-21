@@ -1,4 +1,4 @@
-// program to rotate right the elements of the array
+// program to rotate  the elements right direction of the array  upto k time
 #include<iostream>
 using namespace std;
 
@@ -30,7 +30,7 @@ int main()
 
 int arr[]={1,2,3,4,5};
 n=sizeof(arr)/sizeof(arr[0]);
-int k=3;
+int k=3;//shifting the elements three times
  rotateright(arr,n,k);
 
 }
