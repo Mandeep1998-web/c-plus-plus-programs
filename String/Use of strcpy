@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+using namespace std;
+class Book{
+    public:
+char title[32];
+char author[25];
+};
+int main(){
+Book b1;
+strcpy(b1.title,"c++ programming language");//strcpy(src,destination)
+strcpy(b1.author,"rajgopal charya");
+
+cout<<b1.title;
+cout<<endl<<b1.author;
+}
