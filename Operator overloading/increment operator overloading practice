@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+class overloading{
+public:
+    int i;
+    void display(){
+    cout<<i<<endl;
+    }
+    overloading():i(10){}
+    overloading operator ++(){
+        overloading temp;//so important point over here is that we have to take temp of overloading type because i is of int type
+    temp.i=++i;
+    return temp;
+    }
+};
+int main(){
+overloading o,result;
+o.display();
+result=++o;
+result.display();
+}
