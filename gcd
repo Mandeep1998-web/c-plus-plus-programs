@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+void checkgcd(int num1,int num2){
+    int max;
+if(num1>num2){
+    max=num1;
+    for(int i=1;i<=max;i++){
+    if(max*i%num2==0){
+        cout<<max*i;
+        break;
+    }
+}
+}
+else{
+max=num2;
+for(int i=1;i<=max;i++){
+    if(max*i%num1==0){
+        cout<<max*i;
+        break;
+}
+}
+}
+}
+int main(){
+    int num1,num2;
+cout<<"Enter two numbers";
+cin>>num1>>num2;
+checkgcd(num1,num2);
+}
