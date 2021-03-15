@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-void checkgcd(int num1,int num2){
+void checklcm(int num1,int num2){
     int max;
 if(num1>num2){
     max=num1;
@@ -25,5 +25,5 @@ int main(){
     int num1,num2;
 cout<<"Enter two numbers";
 cin>>num1>>num2;
-checkgcd(num1,num2);
+checklcm(num1,num2);
 }
