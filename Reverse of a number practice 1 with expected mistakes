@@ -1,0 +1,21 @@
+// how to find the reverse of a number
+#include<bits/stdc++.h>
+using namespace std;
+void findreverse(int num){
+    int sum=0,rem;
+    int temp=num;
+    while(num!=0)
+    {
+         rem=num%10;
+         sum=sum*10+rem;
+        num=num/10;// here i put int num=num/10 so it does not dislay anything
+    }
+    if(temp==sum)
+    cout<<"its a palindrome number";
+    else
+    cout<<"its not a palindrome number";
+}
+int main(){
+    int num=121;
+   findreverse(num);
+}
