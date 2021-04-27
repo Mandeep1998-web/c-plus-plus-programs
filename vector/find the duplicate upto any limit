@@ -1,0 +1,34 @@
+#include<bits/stdc++.h>
+using namespace std;
+void duplicate_Check(int arr[],int s){
+bool ifpresent=false;
+int i,j;
+vector<int> v;//this is basically an array list to store the output
+for( i=0;i<s-1;i++){
+    for( j=i+1;j<s;j++){
+    if(arr[i]==arr[j]){
+        auto x=std::find(v.begin(),v.end(),arr[i]);
+        if(x!=v.end()){
+            break;
+        }
+        else{
+           v.push_back(arr[i]);
+            ifpresent=true;
+            }
+    }
+}
+}
+if(ifpresent==true){
+    cout<<"["<<v[0]<<", ";
+    for(int k=1;k<v.size()-1;k++){
+        cout<<v[k]<<", ";
+    }
+    cout<<v[v.size()-1]<<"]";
+}
+}
+//driver code
+int main(){
+int arr[]={10,20,10,20,10,11,11};
+int s=sizeof(arr)/sizeof(arr[0]);
+duplicate_Check(arr,s);
+}
